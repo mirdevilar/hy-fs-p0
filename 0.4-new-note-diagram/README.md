@@ -7,7 +7,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    browser->>server: POST note object to https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     Note left of server: Server updates the data file with the new note
     server-->>browser: 302 Found - redirected load notes page again

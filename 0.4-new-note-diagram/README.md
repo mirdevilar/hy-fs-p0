@@ -10,7 +10,7 @@ sequenceDiagram
     browser->>server: POST note object to https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     Note left of server: Server updates the data file with the new note
-    server-->>browser: 302 Found - redirected load notes page again
+    server-->>browser: 302 Found - redirected to load notes page again
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
